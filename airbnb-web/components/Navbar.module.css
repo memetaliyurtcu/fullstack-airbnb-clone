@@ -1,0 +1,124 @@
+/* airbnb-web/components/Navbar.module.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 4vw;
+    border-bottom: 1px solid #ebebeb;
+    background-color: var(--bg-color);
+    /* Menünün ekranı kaydırsak bile üstte yapışık kalması için sihirli kod: */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logoKismi {
+    flex: 1;
+}
+
+.logo {
+    font-size: var(--font-lg);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.kirmizi {
+    color: var(--primary-color);
+}
+
+.aramaKismi {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.aramaKutusu {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    border: 1px solid #dddddd;
+    border-radius: 40px;
+    padding: 1vh 0.5vw 1vh 1.5vw;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-size: var(--font-sm);
+    font-weight: 600;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.aramaKutusu:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.dikeyCizgi {
+    width: 1px;
+    height: 2.5vh;
+    background-color: #dddddd;
+}
+
+.solukMetin {
+    color: #717171;
+    font-weight: 400;
+}
+
+.aramaIkonu {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.sagKisim {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.ekleButonu {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1.5vh 1vw;
+    border-radius: 30px;
+    transition: background-color 0.2s;
+}
+
+.ekleButonu:hover {
+    background-color: #f7f7f7;
+}
+
+.profilButonu {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 0.8vh 0.5vw 0.8vh 1vw;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.profilButonu:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.profilIkonu {
+    background-color: #717171;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}

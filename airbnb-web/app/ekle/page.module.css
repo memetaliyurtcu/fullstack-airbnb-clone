@@ -1,0 +1,74 @@
+/* airbnb-web/app/ekle/page.module.css */
+.kapsayici {
+    max-width: clamp(300px, 40vw, 600px);
+    /* Formun genişliği ekranın %40'ı olsun ama 600px'i geçmesin */
+    margin: 10vh auto;
+    padding: 4vh 3vw;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    /* Airbnb tarzı şık, hafif bir gölge */
+}
+
+.baslik {
+    font-size: var(--font-lg);
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.satir {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.satir label {
+    font-weight: 600;
+    font-size: var(--font-sm);
+}
+
+.satir input,
+.satir select {
+    padding: 1.5vh 1vw;
+    font-size: var(--font-base);
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.satir input:focus,
+.satir select:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+.kaydetButon {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 2vh 0;
+    font-size: var(--font-base);
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 2vh;
+}
+
+.kaydetButon:hover {
+    opacity: 0.9;
+}
+
+.hata {
+    color: red;
+    font-size: var(--font-sm);
+    background-color: #ffe6e6;
+    padding: 1vh;
+    border-radius: 4px;
+}

@@ -1,0 +1,84 @@
+/* airbnb-web/app/ilan/[id]/page.module.css */
+.anaKapsayici {
+    max-width: 1120px;
+    margin: 4vh auto;
+    padding: 0 4vw;
+}
+
+.baslik {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+
+.resimKapsayici {
+    width: 100%;
+    height: 60vh;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 4vh;
+}
+
+.devResim {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bilgiKapsayici {
+    display: flex;
+    gap: 4vw;
+    justify-content: space-between;
+}
+
+.solBilgi {
+    flex: 2;
+}
+
+.solBilgi h2 {
+    font-size: var(--font-lg);
+    margin-bottom: 1vh;
+}
+
+.puan {
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+
+.aciklama {
+    font-size: var(--font-base);
+    line-height: 1.6;
+    color: #484848;
+}
+
+.sagRezervasyon {
+    flex: 1;
+}
+
+.rezervasyonKutusu {
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 3vh 2vw;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 12vh;
+    /* Menünün hemen altında kalsın diye */
+}
+
+.rezervasyonButonu {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2vh;
+    font-size: var(--font-base);
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 3vh;
+    transition: opacity 0.2s;
+}
+
+.rezervasyonButonu:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,60 @@
+/* airbnb-web/components/IlanKarti.module.css */
+.kart {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    /* dikeyde esneklik */
+    cursor: pointer;
+}
+
+.resim {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* Resmi mükemmel bir kareye (Instagram tarzı) dönüştürür */
+    object-fit: cover;
+    border-radius: 12px;
+    /* Köşeleri yuvarlama */
+    margin-bottom: 1vh;
+}
+
+.bilgi {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.baslikSatiri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baslik {
+    font-size: var(--font-base);
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Başlık çok uzunsa sonuna "..." koyar */
+}
+
+.puan {
+    font-size: var(--font-sm);
+    display: flex;
+    align-items: center;
+}
+
+.konum {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+}
+
+.fiyat {
+    font-size: var(--font-sm);
+    margin-top: 0.5vh;
+}
+
+.kalinFiyat {
+    font-weight: 600;
+    color: var(--text-color);
+}

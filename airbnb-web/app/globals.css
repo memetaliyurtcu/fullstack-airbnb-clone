@@ -1,0 +1,30 @@
+/* airbnb-web/app/globals.css */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  /* Airbnb'nin siyah yerine kullandığı çok koyu gri */
+  --text-muted: #717171;
+  /* Gri alt başlık rengi */
+  --primary-color: #ff385c;
+  /* Meşhur Airbnb Kırmızısı */
+
+  /* FLUID TYPOGRAPHY: Her ekran boyutunda kusursuz yazılar */
+  --font-xs: clamp(0.75rem, 0.7vw + 0.5rem, 0.875rem);
+  --font-sm: clamp(0.875rem, 0.8vw + 0.5rem, 1rem);
+  --font-base: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+  --font-lg: clamp(1.125rem, 1.5vw + 0.5rem, 1.5rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* Airbnb'nin o şık ve yumuşak font ailesi */
+  font-family: 'Circular', -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}

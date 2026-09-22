@@ -1,0 +1,48 @@
+/* airbnb-web/app/page.module.css */
+.anaKapsayici {
+    padding: 2vh 5vw;
+    /* Dikey 2vh, Yatay 5vw esnek boşluk */
+}
+
+/* ÜST FİLTRELEME MENÜSÜ */
+.filtreMenusu {
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 4vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #ebebeb;
+    /* Airbnb'nin ince gri çizgisi */
+    overflow-x: auto;
+    /* Mobilde filtrelerin yana kaydırılabilmesi için */
+}
+
+.filtreButon {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: var(--font-sm);
+    font-weight: 500;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.filtreButon:hover {
+    color: var(--text-color);
+    border-bottom: 2px solid #dddddd;
+}
+
+/* Seçili olan kategorinin stili */
+.aktif {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* İLANLAR GRID ALANI */
+.gridKapsayici {
+    display: grid;
+    /* Airbnb Grid'i: Ekran sığdırabildiği kadar ilan kartını yan yana dizer! */
+    grid-template-columns: repeat(auto-fill, minmax(clamp(250px, 20vw, 350px), 1fr));
+    gap: 4vh 2vw;
+    /* Dikey boşluk 4vh, Yatay 2vw */
+}
